@@ -166,5 +166,77 @@ with tab2:
             ''')
 
             st.error(''' **Observações gerais:** Fazer a ingestão da creatina 5 min antes de almoçar para potencializar com a proteína.
-            ''', icon="🚨")            
+            ''', icon="🚨")
+
+    with col4:
+        with st.container(border=True):
+            
+            st.subheader("Lanche da tarde")
+
+            df_lanche_tarde = pd.DataFrame(
+                {
+                    "Alimento": ["Iogurte natural desnatado", "Whey Protein", "Banana Prata ou Pacovan"],
+                    "Medida": ["120g", "90g", "1 ou 2 unidades (40g)"]        
+                }
+            )
+            st.dataframe(df_lanche_tarde,hide_index=True)
+            
+            # opção 13
+            st.write('''
+            <h5> • Opções de substituição para Banana prata ou pacovan: </h5>
+            ''',unsafe_allow_html=True)
+            st.write(''' 
+            Mamão - 1 Unidade(s) grande(s) (100g) - ou - Abacaxi - 2 Fatia(s) Média(s) (150g) - ou - Maçã - 1 Unidade(s) pequena(s) (80g) - ou - Biscoito de arroz - 7 Unidade(s) (17.5g)
+            ''')
+            st.warning(''' **OBS:** Pode ser feito uma vitamina com os mesmos ingredientes, só mude o iogurte por leite liquido integral (50ml) ou desnatado (70ml).
+            ''', icon="⚠️")     
+
+with tab3:
+    col5, col6 = st.columns(2)
+    
+    with col5:
+        with st.container(border=True):
+            
+            st.subheader("Almoço")
+
+            df_almoco = pd.DataFrame(
+                {
+                    "Alimento": ["Cuscuz", "Acém sem gordura", "Queijo coalho"],
+                    "Medida": ["145g", "100g", "35g"]        
+                }
+            )
+            st.dataframe(df_almoco,hide_index=True)
+            
+            # opção 14
+            st.write('''
+            <h5> • Opções de substituição para Cuscuz: </h5>
+            ''',unsafe_allow_html=True)
+            st.write(''' 
+            Inhame cozido - 150g - ou - Macaxeira cozida - 110g - ou - Arroz cozido com cenoura - 120g - ou - Pão de forma integral - 2 Fatia(s) (50g)
+            ''')
+            # opção 15
+            st.write('''
+            <h5> • Opções de substituição para Acém sem gordura: </h5>
+            ''',unsafe_allow_html=True)
+            st.write(''' 
+            Carne moída refogada - 70g - ou - Patinho refogado - 130g - ou - Frango desfiado ou cozido ou assado - 140g ou - Omelete Recheado com Carne ou Frengo - 130g
+            ''')
+            # opção 16
+            st.write('''
+            <h5> • Opções de substituição para Queijo coalho: </h5>
+            ''',unsafe_allow_html=True)
+            st.write(''' 
+            Queijo minas - 40g - ou - Ricota - 70g.
+            ''')
+    
+    with col6:
+        with st.container(border=True):
+            st.info('**Sugestões para a Ceia:** \n **Chá sem açúcar:** uma opção leve e saudável.', icon="🍵")
+            st.info('**Observações Gerais:** \n **Café sem açúcar:** pode ser consumido até às 17h. \n **Hidratação:** recomenda-se a ingestão de água até 1 hora antes de dormir.', icon="🥤")
+            
+            st.toast('**Importante:** Essas práticas auxiliam na manutenção de uma boa higiene do sono, promovendo um descanso de qualidade.', icon='⏰')
+
+            
+
+
             
