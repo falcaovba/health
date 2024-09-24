@@ -13,6 +13,7 @@ with tab1:
     
     with col1:
         with st.container(border=True):
+            
             st.subheader("Café da manhã")
 
             df_cafe_manha = pd.DataFrame(
@@ -91,3 +92,79 @@ with tab1:
             ''')
             st.warning(''' **OBS:** Caso não queira as opões de amendoim/pastas e afins, faça uma pequena salada de frutas com 3 opções de frutas (dê preferencia a frutas com mais liquido, adicione chia (3g) e granola (8g)
             ''', icon="⚠️")
+
+with tab2:
+    col3, col4 = st.columns(2)
+    
+    with col3:
+        with st.container(border=True):
+            
+            st.subheader("Almoço")
+
+            df_almoco = pd.DataFrame(
+                {
+                    "Alimento": ["Feijão Preto", "Arroz com Cenoura", "Abobrinha cozida sem sal", "Peito de frango grelhado", "Salada de legumes cozido no vapor com sal", "Laranja"],
+                    "Medida": ["120g", "90g", "90g","140g", "2 colhere(s) de sopa (60g)", "1 Unidade(s) média(s) (180g)"]        
+                }
+            )
+            st.dataframe(df_almoco,hide_index=True)
+            
+            # opção 7
+            st.write('''
+            <h5> • Opções de substituição para Feijão Preto: </h5>
+            ''',unsafe_allow_html=True)
+            st.write(''' 
+            Grão de bico cozido - 50g - ou - Feijão carioca cozido - 120g - ou - Feijão fradinho cozido - 120g
+            ''')
+            st.warning(''' **OBS:** Não adicionar embutidos como: charque, calabresa e afins no feijão; usar temperos naturais (chimichurri, açafrão, lemon pepper, páprica) se possível, evitar temperos industrializados
+            ''', icon="⚠️")
+            
+            # opção 8
+            st.write('''
+            <h5> • Opções de substituição para Arroz com Cenoura: </h5>
+            ''',unsafe_allow_html=True)
+            st.write(''' 
+            Macarrão cozido - 90g - ou - Macaxeira cozida - 90g
+            ''')
+            st.warning(''' **OBS:** Evitar o uso de molho pronto pro macarrão, utilizar extrato de tomate ou só um fio de azeite.
+            ''', icon="⚠️")
+            
+            # opção 9
+            st.write('''
+            <h5> • Opções de substituição para Abobrinha italiana cozida sem sal: </h5>
+            ''',unsafe_allow_html=True)
+            st.write(''' 
+            Berinjela cozida - 60g - ou - Salada de legumes cozidos no vapor com sal 80g
+            ''')
+            
+            # opção 10
+            st.write('''
+            <h5> • Opções de substituição para Peito de frango grelhado: </h5>
+            ''',unsafe_allow_html=True)
+            st.write(''' 
+            Sobrecoxa de frango sem pele assada - 90g - ou - Contra-filé grelhado - 110g - ou - Coxa de frango sem pele assada - 100g - ou - Fígado grelhado - 100g - ou - Filé de peixe cozido - 150g - ou - Filé de peixe grelhado/assado - 140g
+            ''')
+            st.warning(''' **OBS:** Cuidado com o preparo dos assados (usar o mínimo de azeite/óleo possível) preferencia air fryer.
+            ''', icon="⚠️")            
+            
+            # opção 11
+            st.write('''
+            <h5> • Opções de substituição para Salada de legumes cozidos no vapor com sal: </h5>
+            ''',unsafe_allow_html=True)
+            st.write(''' 
+            Legumes refogados - 30g ou Salada crua ( pepino, tomate, alface e cebola ) – a vontade.
+            ''')
+            st.warning(''' **OBS:** Adicionar limão espremido para temperar a salada crua, nada de azeite, vinagres ou molhos.
+            ''', icon="⚠️")
+
+            # opção 12
+            st.write('''
+            <h5> • Opções de substituição para Laranja: </h5>
+            ''',unsafe_allow_html=True)
+            st.write(''' 
+            Tangerina Ponkã - 1 Unidade(s) média(s) (135g) - ou - Mamão - 180g - ou - Kiwi - 1 Unidade(s) (75g) ou Abacaxi – 2 fatia(s) (100g).
+            ''')
+
+            st.error(''' **Observações gerais:** Fazer a ingestão da creatina 5 min antes de almoçar para potencializar com a proteína.
+            ''', icon="🚨")            
+            
