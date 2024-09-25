@@ -233,10 +233,6 @@ with tab3:
         with st.container(border=True):
             st.info('**Sugestões para a Ceia:** \n **Chá sem açúcar:** uma opção leve e saudável.', icon="🍵")
             st.info('**Observações Gerais:** \n **Café sem açúcar:** pode ser consumido até às 17h. \n **Hidratação:** recomenda-se a ingestão de água até 1 hora antes de dormir.', icon="🥤")
-            
-            st.toast('**Importante:** Essas práticas auxiliam na manutenção de uma boa higiene do sono, promovendo um descanso de qualidade.', icon='⏰')
-
-            
-
-
+            st.info('**Importante:** Essas práticas auxiliam na manutenção de uma boa higiene do sono, promovendo um descanso de qualidade.', icon='⏰')
+          
             
