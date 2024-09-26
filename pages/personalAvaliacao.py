@@ -8,4 +8,4 @@ with pg2:
 with pg3:   
     st.page_link("pages/Avaliação Personal.py", label="Avaliação Personal", icon="💪")
 
-st.header("🏛️ Home", divider="rainbow")
+st.header("💪 Avaliação Personal", divider="rainbow")
