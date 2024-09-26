@@ -9,7 +9,7 @@ with pg1:
 with pg2:
     st.page_link("pages/planejamentoAlimentar.py", label="Planelamento Alimentar", icon="🥗")
 with pg3:   
-    st.page_link("pages/planejamentoAlimentar.py", label="Avaliação Personal", icon="💪")
+    st.page_link("pages/personalAvaliacao.py", label="Avaliação Personal", icon="💪")
 
     
 st.header("🥗 Planejamento Alimentar", divider="rainbow")
